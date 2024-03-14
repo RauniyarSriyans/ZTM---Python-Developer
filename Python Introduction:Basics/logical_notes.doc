@@ -1,0 +1,64 @@
+# Truthy and Falsy values
+1. Falsy values
+    - False
+    - None
+    - 0
+    - 0.0
+    - 0j
+    - ''
+    - []
+    - ()
+    - {}
+    - set()
+2. Everything else is truthy 
+
+# Ternary Operator or Conditional Expressions
+1. Condition_if_true if condition else condition_if_false  
+Eg: print('is friend') if is_friend else print('nope')
+
+# short circuiting 
+1. if true or false:
+      do something 
+    Here, the short circuiting happens when the interpreter realizes that the first condition and the keyword right after satisfies enough 
+    to do something. This ensures the second or further conditions need not be checked. 
+    Another example an be 
+    if false and true: --> You don't really have to do this block because false and means you don't have to anything
+    if true or false: --> doesn't check the false condition because true is enough 
+
+2. So, short circuiting is having enough confidence to terminate further computation when you already have something satisfied. 
+
+
+# checking equality 
+1. == checks for equality
+2. is checks if the location of memory is the same. is should yield True for numbers, booleans. 
+For eg: a = [1,2,3] and b = [1,2,3]. a==b is True since it compares the values but a is b is False since both are at different memory location. 
+
+# loops 
+1. for item in iterables: --> iterables can be a list, string, tuple, set, dictionary.
+    do something 
+2. for i in range(0,10,2): --> range(start, stop, step)
+    do something
+3. for i in range(10): --> range(stop) --> for numbers 
+    do something
+4. for i in enumerate('hello'): --> enumerate returns a tuple with index and value
+    print(i) --> (0, 'h'), (1, 'e'), (2, 'l'), (3, 'l'), (4, 'o')
+5. for i, char in enumerate('hello'):
+    print(i, char) --> 0 h, 1 e, 2 l, 3 l, 4 o
+
+For dictionary:
+for keys, values in dict.items():
+    print(keys, values)
+for keys in dict.keys():
+    print(keys)
+for values in dict.values():
+    print(values)
+
+
+# while loop
+1. while condition:
+    do something
+    condition = False --> to break the loop
+
+Can use break to break out whenever you want.
+Can use continue to skip the current iteration and move to the next one. --> anything below continue is not hit
+Can use pass to do nothing. --> passes to the next line of code.

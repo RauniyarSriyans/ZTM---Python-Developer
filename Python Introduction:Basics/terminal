@@ -1,0 +1,17 @@
+# Terminal Commands
+1. ls --> list all files and directories in the current directory
+2. pwd --> present working directory
+3. cd --> change directory
+4. cd .. --> move to the parent directory
+5. clear --> clear the terminal
+6. cd / --> move to the root directory
+7. cd ~ --> move to the home directory
+8. open . --> open the current directory in the finder
+9. mkdir name --> make a new directory with the name 'name'
+10. touch name --> create a new file with the name 'name'
+11. open name --> open the file with the name 'name'
+12. open -a "application name" name --> open the file with the name 'name' in the application 'application name'
+13. mv name1 name2 --> rename the file with the name 'name1' to 'name2'
+14. rm name --> remove the file with the name 'name'
+15. rm -r name --> remove the directory with the name 'name'
+16. say "text" --> speak the text

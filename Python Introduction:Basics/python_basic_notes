@@ -1,0 +1,308 @@
+# Python Cheatsheet 
+https://zerotomastery.io/cheatsheets/python-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent
+
+
+
+Python uses interpreter to compile codes. Interpreter generates an intermediate byte code. 
+Interpreter are usually called Cpython virtual machines. 
+
+
+# Print 
+Print can use either single quote or double quote. Use double quote when single quote
+is within the printable material. 
+
+# Input 
+Used to get some information from the user 
+
+# type 
+print(type(6)) --> Prints the type of 6 
+
+# Math functions
+1. Round --> round(3.1) --> prints 3 (rounds down the number), 3.9 prints 4 
+2. abs --> abs(-9) --> prints 9, no negative numbers 
+3. Can find all in Python Math module 
+
+# Operator precedence
+print(20 + 3 * 4) --> first, 12, then add 20 --> gives 32
+First, brackets (), power of (**), multiply (*), division (/), addition (+), subtraction (-)
+
+# Binary and complex
+complex is another data type in addition to int and float. 
+bin() --> returns binary representation of the integer 
+Eg. bin(5) --> returns 0b101 --> 0b says a binary has been converted
+To convert a binary to an int, let's say, do the following: 
+--> print(int('0b101', 2)) --> the first argument is the actual binary form of the data, the second argument is base of whatever the data represents
+So, 0b for binary (base 2), 0x for hexadecimal (base 16), 0o for octal (base 8), and 0d for decimal (base 10).
+so, int('0x101', 16) --> returns 257
+so, int('0o101', 8) --> returns 65
+so, int('0d101', 10) --> returns 101
+and int('0b101', 2) --> returns 5
+
+# Data types in Python
+1. int --> 3, 4, 5, 6
+2. float --> 3.4, 5.6, 7.8
+3. complex --> 3 + 4j, 5 + 6j, 7 + 8j
+4. str --> 'hello', "world", '''hello world''', """hello world""" --> single quotes and double quotes are the same, but triple quotes are used for multi-line strings
+5. bool --> True, False
+6. list --> [1, 2, 3, 4], ['a', 'b', 'c', 'd'] --> list is mutable and ordered
+7. tuple --> (1, 2, 3, 4), ('a', 'b', 'c', 'd') --> tuple is immutable and ordered
+8. set --> {1, 2, 3, 4}, {'a', 'b', 'c', 'd'} --> set is mutable and unordered
+9. dict --> {'name': 'Max', 'age': 28}, {'name': 'Tom', 'age': 30} --> dict is mutable and unordered
+10. NoneType --> None
+
+# Variables in Python
+1. Variables are used to store data. Can be named anything. Variables can be assigned any value or data type. 
+2. Variables are case sensitive.
+3. snake_case is used for naming variables. Start with lowercase or underscore. 
+4. Can't start with nubmers, letters, or special characters. 
+5. Python has certain keywords such as print, input, int, float, etc. which can't be used as variable names.
+6. a,b,c = 1,2,3 is a valid way of assigning multiple variables. 
+
+# Expression vs statement 
+Expression is a piece of code that produces a value. 
+Statement is a line of code that does something.
+For example, 2 + 2 is an expression, but print(2 + 2) is a statement.
+
+# Augmented assignment operator
+1. += --> a += 2 is the same as a = a + 2 --> addition
+2. -= --> a -= 2 is the same as a = a - 2 --> subtraction
+3. *= --> a *= 2 is the same as a = a * 2 --> multiplication
+4. /= --> a /= 2 is the same as a = a / 2 --> division
+5. **= --> a **= 2 is the same as a = a ** 2 --> exponentiation
+6. //= --> a //= 2 is the same as a = a // 2 --> floor division --> a floor division is a division that rounds down to the nearest whole number
+7. %= --> a %= 2 is the same as a = a % 2 --> modulus
+
+# String
+1. Plus operator can be used to concatenate strings. 
+2. Escape sequence is used to include special characters in a string. 
+\n --> new line, \t --> tab, \' --> apostrophe, \" --> quotation, \\ --> actual backslash
+3. len() --> returns the length of the string
+4. string[index] --> returns the character at the index
+5. string[start:stop:step] --> returns the characters from start to stop with step --> doesn't include stop --> also called slicing
+6. string[::-1] --> returns the string in reverse
+7. string.upper() --> returns the string in upper case
+8. string.lower() --> returns the string in lower case
+9. string.title() --> returns the string in title case
+10. string.strip() --> removes any whitespace from the beginning and end of the string
+11. string.find('substring') --> returns the index of the first occurrence of the substring
+12. string.replace('old', 'new') --> replaces the old substring with the new substring
+13. String is immutable --> string[5] = 'm' --> doesn't work. Reassignment is not possible. 
+14. ' '.join(['a', 'b', 'c']) --> returns 'a b c' --> joins the elements of the list with the string
+
+# Formatted strings 
+Rather than using multiple + operators to concatenate strings, formatted strings can be used.
+So, for example, if name = 'John' and age = 25, then print(f'Hi {name}. You are {age} years old.') --> prints Hi John. You are 25 years old.
+Add f at the beginning and include any variable in curly braces.
+
+# Methods vs Functions
+Method is a function that belongs to an object.
+Function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value).
+Eg. print() is a function, but upper() is a method that works only on strings.
+Python String Methods --> https://www.w3schools.com/python/python_ref_string.asp
+Python Built-in Functions --> https://docs.python.org/3/library/functions.html
+
+# Bool Datatype
+bool can either be True or False 
+bool(0) --> returns False
+bool(1) --> returns True
+
+# Data structure 
+1. Data structure is a way of organizing and storing data so that it can be accessed and modified efficiently.
+2. Python has four built-in data structures: list, tuple, set, and dictionary.
+
+# Lists 
+1. Lists are ordered and mutable.
+2. Can contain any data type. 
+3. Can contain lists within lists. 
+4. Can use list() to convert a string to a list.
+5. Can be indexed and sliced. Very similar to strings. list[start:stop:step]
+6. Unlike strings, lists are mutable. Meaning list[0] = 'something else' updates the list.
+7. If list1 = list2, if you make any changes to list1, list2 will also be updated since both points to same memory location.
+8. To simply copy a list, use list2 = list1.copy() or list2 = list(list1) or list2 = list1[:]
+9. In multi-dimensional lists, list[0][0] is the first element of the first list. You can have as many dimensions as possible. 
+
+# Methods on Lists 
+1. list.append('new') --> adds 'new' to the end of the list
+2. list.insert(index, 'new') --> adds 'new' to the index of the list 
+3. list.remove('new') --> removes the first occurrence of 'new' from the list
+4. list.pop() --> removes the last element from the list --> list.pop(index) removes the element at the index
+5. list.clear() --> removes all elements from the list
+6. list.extend(['new1', 'new2']) --> adds 'new1' and 'new2' to the end of the list
+7. Remember, pop returns whatever item it removes while remove doesn't return anything. Remove takes the actual item to be removed while
+pop takes the index of the item to be removed.
+8. list.index('new') --> returns the index of the first occurrence of 'new' in the list
+9. list.count('new') --> returns the number of occurrences of 'new' in the list
+10. list.sort() --> sorts the list in ascending order
+11. List unpacking --> a, b, c = [1, 2, 3] --> a = 1, b = 2, c = 3
+    Assume your list is [1,2,3,4,5,6,7,8,9], you want to unpack 1,2,3 and keep everything else in a list.
+    Just say a,b,c, *other = [1,2,3,4,5,6,7,8,9] --> a = 1, b = 2, c = 3, other = [4,5,6,7,8,9] --> other remains a list. 
+    If you say a,b,c, *other, d = [1,2,3,4,5,6,7,8,9] --> a = 1, b = 2, c = 3, other = [4,5,6,7,8], d = 9
+
+
+# Dictionaries 
+1. Dictionaries are unordered and mutable.
+2. Dictionaries are used to store data values in key:value pairs.
+3. A dictionary is a collection which is ordered*, changeable and does not allow duplicates.
+4. Dictionaries are written with curly brackets, and have keys and values.
+5. Can contain any data type.
+6. Can contain dictionaries within dictionaries.
+7. Can be indexed using keys.
+8. If dict1 = dict2, if you make any changes to dict1, dict2 will also be updated since both points to same memory location.
+9. To simply copy a dictionary, use dict2 = dict1.copy() or dict2 = dict(dict1) or dict2 = dict1.copy()
+10. In multi-dimensional dictionaries, dict['key1']['key2'] is the value of the second key in the first key. You can have as many dimensions as possible
+11. The keys of a dicationary needs to be immutable data types. So, you can't use a list as a key. This is because keys are hashed. 
+12. Can be initialized using dict() or {}. 
+
+# Methods on Dictionaries
+1. dict.keys() --> returns the keys of the dictionary
+2. dict.values() --> returns the values of the dictionary
+3. dict.items() --> returns the key-value pairs of the dictionary
+4. dict.clear() --> removes all elements from the dictionary
+5. dict.copy() --> returns a copy of the dictionary
+6. dict.get('key', 'default') --> returns the value of the key, if doesn't exist, returns the default value
+7. dict.pop('key') --> removes the key and returns the value
+8. dict.popitem() --> removes the last key-value pair and returns it
+9. dict.update({'key': 'value'}) --> updates the dictionary with the key-value pair
+10. You can use dict.update({'key': 'value'}) to add a new key-value pair or update an existing key-value pair.
+
+# Tuples
+1. Tuples are ordered and immutable.
+2. Can contain any data type.
+3. Similar to list but immutable.
+4. Can be initialized using tuple() or ().
+5. Is not as flexible as list. 
+6. Can be indexed and sliced. Very similar to strings. tuple[start:stop:step]
+7. Tuples can be unpacked just like lists. 
+
+# Tuple methods 
+1. tuple.count('new') --> returns the number of occurrences of 'new' in the tuple
+2. tuple.index('new') --> returns the index of the first occurrence of 'new' in the tuple
+
+# Sets 
+1. Sets are unordered and unindexed collection of unique objects.
+2. Sets are written with curly brackets.
+3. Can contain any data type.
+4. Sets are mutable.
+5. Sets are unordered, so you can't be sure in which order the items will appear.
+6. Sets are unindexed, so you can't access items in a set by referring to an index, since sets are unordered the items has no index.
+7. Sets are unchangeable, meaning that we cannot change the items after the set has been created.
+8. Sets can't have duplicates.
+9. Can be initialized using set() or {}.
+
+# Methods on Sets
+1. set.add('new') --> adds 'new' to the set
+2. set.update(['new1', 'new2']) --> adds 'new1' and 'new2' to the set
+3. set.remove('new') --> removes 'new' from the set --> similar to set.discard('new') but discard doesn't throw an error if the item doesn't exist
+4. set.pop() --> removes a random item from the set
+5. set.clear() --> removes all elements from the set
+6. set.copy() --> returns a copy of the set
+7. set.union(set2) --> returns a set containing all the elements of both set and set2
+8. set.intersection(set2) --> returns a set containing the elements that are common in both set and set2
+9. set.difference(set2) --> returns a set containing the elements that are in set but not in set2
+10. set.difference_update(set2) --> removes the elements that are common in both set and set2 from set
+11. set.symmetric_difference(set2) --> returns a set containing the elements that are not common in both set and set2
+12. set.issubset(set2) --> returns True if all the elements of set are in set2
+13. set.issuperset(set2) --> returns True if all the elements of set2 are in set
+14. set.isdisjoint(set2) --> returns True if set and set2 have no common elements
+
+# Functions 
+1. Functions are a block of code that only runs when it is called.
+2. You can pass data, known as parameters, into a function.
+3. A function can return data as a result.
+4. Functions are defined using def keyword.
+5. Functions can be called using the function name and passing the parameters.
+
+# Docstrings
+1. Docstrings are used to describe what a function does.
+2. Docstrings are written in triple quotes.
+3. Docstrings are written at the beginning of the function.
+For eg: def test(a, b):
+            ''' 
+            This function adds two numbers
+            '''
+            return a + b
+This can be accessed using test.__doc__ --> returns This function adds two numbers
+
+
+# *args and **kwargs
+1. *args is used to pass a variable number of non-keyworded arguments to a function.
+2. **kwargs is used to pass a variable number of keyworded arguments to a function.
+
+For eg: 
+def sum(*args):
+    return sum(args)
+
+Here, sum function can accept any number of arguments now. 
+
+For eg: 
+def test(**kwargs):
+    return kwargs
+
+Here, test function can accept any number of keyword arguments now. Keyword arguments mean arguments with a key (like a dictionary).
+
+# Rule of arguments 
+1. parameters, *args, default parameters, **kwargs  
+2. def test(a, b, *args, name='Max', **kwargs):
+
+# walrus operator 
+1. Walrus operator is used to assign a value to a variable as part of an expression.
+2. Walrus operator is :=
+3. For eg: 
+a = 'hello'
+if (n := len(a)) > 5:
+    print(f'Too long {n} elements')
+Here, n is assigned the length of a and then used in the if statement. Outside the if statement, n is not available.
+Used to avoid repetition of code.
+
+# Scope 
+1. Scope is the part of the program where a variable is recognized. What variables do I have access to?
+2. Python has local, enclosing, global, and built-in scopes.
+3. Local scope is the code block or function.
+4. Enclosing scope is the function that encloses the current function.
+5. Global scope is the module or the file.
+6. Built-in scope is the built-in functions in Python.
+7. Nonlocal keyword is used to modify a variable in the enclosing scope.
+Start with local scope --> Then, parent local scope --> then, global scope --> then, built-in scope
+
+# Global vs non-local 
+1. Global variables are the ones that are defined outside of a function and can be accessed anywhere in the program.
+2. Non-local variables are the ones that are defined in the enclosing function and can be accessed in the enclosed function.
+For eg:
+def outer():
+    x = 'local' --> local parent scope
+    def inner():
+        nonlocal x --> need to access x but x is not global; it is simply nonlocal and belongs to a parent function outer
+        x = 'nonlocal' --> here, x is reassigned nonlocal in nonlocal scope meaning x is reassigned in the parent function
+        print('inner:', x) --> prints nonlocal
+    inner()
+    print('outer:', x) --> prints nonlocal again
+
+# Functional Programming 
+1. Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions 
+and avoids changing-state and mutable data.
+2. Pure functions are the functions that always produce the same output for the same input and don't have any side effects.
+Side effects are the changes that a function makes to the outside world. 
+3. Pure functions are the functions that don't change the state of the program.
+Example of pure functions: len(), min(), max(), abs(), etc. ALways outputs the same result for the same input and doens't interact or 
+affected by the outside world.
+
+# Lambda Expressions 
+1. Lambda expressions are used to create anonymous functions that are used for a short period of time or sometimes only once. 
+2. Lambda expressions are written using lambda keyword.
+3. The syntax is [[lambda parameters: action(parameters)]].
+
+# Comprehensions (List, Set, Dictionary)
+1. Comprehensions are used to create a list, set, or dictionary using a single line of code.
+2. List comprehension is written using square brackets.
+Eg: [i for i in range(5)] --> returns [0, 1, 2, 3, 4]
+3. Set comprehension is written using curly brackets.
+Eg: {i for i in range(5)} --> returns {0, 1, 2, 3, 4}
+4. Dictionary comprehension is written using curly brackets and key-value pairs.
+Eg: {i: i*2 for i in range(5)} --> returns {0: 0, 1: 2, 2: 4, 3: 6, 4: 8}
+
+# Decorators 
+1. Decorators are used to modify the behavior of a function or a class.
+2. Decorators are written using @ symbol.
+3. Decorators are used to add functionality to an existing function or class.
+
+# Error handling

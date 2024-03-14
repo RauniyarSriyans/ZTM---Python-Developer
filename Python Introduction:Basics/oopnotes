@@ -1,0 +1,97 @@
+# Object Oriented Programming
+1. Object Oriented Programming (OOP) is a programming paradigm that uses objects and classes in programming. 
+  It aims to implement real-world entities like inheritance, hiding, polymorphism etc in programming.
+
+# OOP in Python
+1. To instantiate an object in Python, we use the class name followed by parenthesis.
+Eg:
+class MyClass:
+  def __init__(self, name):
+    self.name = name
+
+Here, an object of the class MyClass is created which can be instantiated using the following code:
+obj = MyClass('name')
+
+# Class method and static method
+1. Class methods are bound to the class and not the object of the class. They have access to the state of the class as it takes
+a class parameter that points to the class and not the object instance.
+2. Static methods are also bound to the class and not the object of the class. They do not have access to the state of the class
+as they do not take any parameters that reference the class.
+Eg:
+class MyClass:
+  def __init__(self, name):
+    self.name = name
+  @classmethod
+  def class_method(cls):
+    print('This is a class method')
+  @staticmethod
+  def static_method():
+    print('This is a static method')
+
+# 4 pillars of OOP 
+
+1. Encapsulation 
+- Encapsulation is the mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+- It's like creating an object that contains both data and functions that manipulate the data.
+- It restricts direct access to some of the object's components.
+
+2. Abstraction
+- Abstraction is the concept of hiding the complex implementation of an object and only showing the necessary features of the object.
+- It helps to reduce programming complexity and effort.
+- It is achieved using abstract classes and interfaces in Python.
+
+3. Inheritance
+- Inheritance is the mechanism of creating a new class using the properties and methods of an existing class.
+- The new class is called the derived class and the existing class is called the base class.
+- It helps to reuse the code and establish a relationship between different classes.
+- One class can inherit from another class using the following syntax:
+class DerivedClass(BaseClass):
+  pass
+
+4. Polymorphism
+- Polymorphism is the ability of an object to take on many forms.
+- It is the ability to redefine methods for derived classes.
+- It allows methods to be used with the same name across different classes.
+- It is achieved using method overriding and method overloading in Python.
+Eg:
+class Animal:
+  def speak(self):
+    print('Animal speaks')
+
+class Dog(Animal):
+    def speak(self):
+        print('Dog barks')
+
+class Cat(Animal):
+    def speak(self):
+        print('Cat meows')  
+
+Here, the speak method is redefined or overwritten for the derived classes Dog and Cat.
+
+# Introspection
+1. Introspection is the ability to determine the type of an object at runtime.
+2. It is the ability to determine the properties of an object at runtime.
+
+# Dunder methods
+1. Dunder methods are special methods in Python that have double underscores at the beginning and end of their names.
+2. They are also called magic methods as they are used to perform certain operations in Python.
+3. They are used to define the behavior of objects in Python.
+4. You can update or modify the behavior of these methods by overriding them in the derived class.
+
+# Method Resolution Order (MRO)
+1. Method Resolution Order (MRO) is the order in which base classes are searched for a method in Python.
+2. It is the order in which Python looks for a method in the hierarchy of classes.
+3. It is calculated using the C3 linearization algorithm.
+4. You can view the MRO of a class using the __mro__ attribute.
+5. Let's say a class has parent class and the parent class also has a parent class. 
+Then, the MRO of the class is the order in which Python looks for a method in the hierarchy of classes.
+
+# Filter, Map, Reduce, Zip 
+1. Filter, map, reduce and zip are built-in functions in Python.
+2. They are used to perform operations on iterables like lists, tuples, sets etc.
+3. Filter is used to filter out elements from an iterable based on a condition.
+4. Map is used to apply a function to all the elements of an iterable.
+5. Reduce is used to apply a function to all the elements of an iterable and reduce it to a single value.
+6. Zip is used to combine two or more iterables into a single iterable.
+
+
