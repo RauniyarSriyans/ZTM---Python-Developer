@@ -306,3 +306,77 @@ Eg: {i: i*2 for i in range(5)} --> returns {0: 0, 1: 2, 2: 4, 3: 6, 4: 8}
 3. Decorators are used to add functionality to an existing function or class.
 
 # Error handling
+1. Syntax error --> error in the syntax of the code
+2. Name error --> variable is not defined
+3. Type error --> operation is performed on an incorrect data type
+4. Index error --> index is out of range
+5. Value error --> operation performed on a correct data type but with an incorrect value
+6. Key error --> key is not found in the dictionary
+7. Zero division error --> division by zero
+8. Assertion error --> assert statement fails
+Use try, except, else, and finally to handle errors.
+Try --> block of code to be attempted
+Except --> block of code to be executed if there is an error in the try block
+Else --> block of code to be executed if there is no error in the try block
+Finally --> block of code to be executed regardless of the result of the try and except blocks
+
+
+# Generators 
+1. Generators are used to create iterators.
+2. Generators are written using yield keyword.
+3. Generators are used to generate a sequence of values.
+4. Generators are used to generate a sequence of values without storing them in memory.
+5. Generators are used to generate a sequence of values one at a time.
+Example of a generator:
+def generator_function(num):
+    for i in range(num):
+        yield i
+
+
+# Modules vs Packages in Python
+1. Module is a file containing Python definitions and statements. The file name is the module name with the suffix .py.
+2. Package is a collection of modules. It is a directory containing a file __init__.py.
+3. Modules are used to break down large programs into small manageable and organized files.
+4. Packages are used to organize modules into a directory hierarchy.
+5. To access a function within a package, use from package import module or from package.module import function.
+
+# __name__ 
+1. __name__ is a built-in variable that returns the name of the current module.
+2. If the module is being run directly, __name__ is set to __main__.
+3. To run a module directly, use if __name__ == '__main__': --> do something. 
+
+# sys module 
+1. sys module is used to access system-specific parameters and functions.
+2. sys.argv is a list in Python, which contains the command-line arguments passed to the script.
+3. sys.exit() is used to exit from Python.
+4. 0 is always the file name, 1 is the first argument, 2 is the second argument, and so on.
+
+
+# Virtual Environment
+1. Virtual environment is used to create an isolated environment for Python projects.
+2. Virtual environment is used to avoid conflicts between different Python projects.
+3. Virtual environment is used to install packages without affecting the system-wide installation.
+4. To create a virtual environment, use python -m venv name_of_environment.
+5. To activate a virtual environment, use source name_of_environment/bin/activate.
+6. To deactivate a virtual environment, use deactivate.
+Example:   
+python -m venv myenv
+source myenv/bin/activate
+deactivate
+
+# Some useful data types in Python modules 
+1. collections --> defaultdict, namedtuple, OrderedDict, Counter, deque
+Counter --> used to count the number of occurrences of elements in a list. 
+collections.Counter([1, 2, 3, 4, 1, 2, 3, 1, 2, 1]) --> returns Counter({1: 4, 2: 3, 3: 2, 4: 1})
+
+# Array vs List in Python
+1. Array is a data structure that stores a collection of similar items.
+2. List is a built-in data structure that stores a collection of items that might not necessarily be of the same type.
+3. Array is defined in the array module. (from array import array)
+4. Array is faster and more efficient than list.
+
+# Python debugging 
+1. Using pdb module --> pdb.set_trace() is used to set a breakpoint in the code.
+
+# Regular Expressions 
+1. 

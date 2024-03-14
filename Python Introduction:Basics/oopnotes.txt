@@ -93,5 +93,3 @@ Then, the MRO of the class is the order in which Python looks for a method in th
 4. Map is used to apply a function to all the elements of an iterable.
 5. Reduce is used to apply a function to all the elements of an iterable and reduce it to a single value.
 6. Zip is used to combine two or more iterables into a single iterable.
-
-
