@@ -379,4 +379,16 @@ collections.Counter([1, 2, 3, 4, 1, 2, 3, 1, 2, 1]) --> returns Counter({1: 4, 2
 1. Using pdb module --> pdb.set_trace() is used to set a breakpoint in the code.
 
 # Regular Expressions 
-1. 
+1. Regular expressions are used to search for patterns in strings.
+2. Regular expressions are written using re module.
+3. Regular expressions are used to search, match, and extract information from strings.
+4. Regular expressions are used to validate data.
+5. The syntax for regular expressions is re.search('pattern', 'string') --> returns a match object if the pattern is found in the string.
+
+# Testing in Python
+1. You can use a module called unittest to test your code.
+2. If you have multiple unit test files, you can simply run all at unison by using the following command:
+python -m unittest 
+3. If you do python -m unittest -v, it will give you a verbose output.
+4. You can also write a function called setUp to set up the test environment before running the test cases.
+5. You can also write a function called tearDown to clean up the test environment after running the test cases.
