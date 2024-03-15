@@ -27,7 +27,7 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     # start tls which upgrades to a secured layer
     smtp.starttls()
     # login using your email and APP password (remember, not your normal password but your app password)
-    smtp.login('sriyansrauniyar21@gmail.com', 'uduw tgmt htoh yszd')
+    smtp.login('sriyansrauniyar21@gmail.com', 'APP PASSWORD HERE')
     # send the email
     smtp.send_message(email)
     print('done!')
