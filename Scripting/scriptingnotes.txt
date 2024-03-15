@@ -1,0 +1,5 @@
+# Scripting in Python
+1. Scripting is a way to automate repetitive tasks. 
+
+# Image processing 
+1. Image processing using Python includes Pillow, OpenCV, scikit-image, and others.
