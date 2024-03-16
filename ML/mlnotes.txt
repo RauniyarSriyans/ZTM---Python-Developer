@@ -1,0 +1,43 @@
+# Machine Learning
+
+1. All starts with AI --> Machine Learning is a subset of AI --> Deep Learning is a subset of Machine Learning
+   Data Science intersects with Machine Learning, AI, and Deep Learning all. 
+2. Machine Learning is a method of data analysis that automates analytical model building.
+3. Using algorithms that iteratively learn from data, machine learning allows computers to find hidden 
+insights without being explicitly programmed where to look.
+4. Machine Learning is a method of teaching computers to make and improve predictions or behaviors based on some data.
+
+# Types of Machine Learning
+1. Supervised Learning - The algorithm is trained on a labeled dataset, and the algorithm learns to predict the output from 
+the input data.
+Eg: Classification, Regression
+2. Unsupervised Learning - The algorithm is trained on an unlabeled dataset, and the algorithm learns to predict the output. 
+Eg: Clustering, Association
+3. Reinforcement Learning - The algorithm learns to perform an action based on the feedback from the environment.
+Eg: Game playing, Robotics
+
+# Steps in Machine Learning
+1. Import the data / Data Collection - The data can be in any format like CSV, Excel, SQL, etc.
+2. Clean the data - The data may contain missing values, duplicate values, etc.
+3. Split the data - The data is split into training and testing data.
+4. Train the model - The model is trained on the training data.
+5. Test the model - The model is tested on the testing data.
+6. Improve the model - The model is improved based on the testing data.
+
+# Tools in Machine Learning
+1. Python - Python is the most popular language for machine learning.
+NumPy --> NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays 
+and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+Pandas --> Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and data manipulation library
+built on top of the Python programming language.
+Matplotlib --> Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
+Seaborn --> Seaborn is a Python data visualization library based on Matplotlib.
+Scikit-learn --> Scikit-learn is a free software machine learning library for the Python programming language.
+TensorFlow --> TensorFlow is an open-source software library for dataflow and differentiable programming across a range of tasks.
+Keras --> Keras is an open-source software library that provides a Python interface for artificial neural networks.
+PyTorch --> PyTorch is an open-source machine learning library based on the Torch library.
+
+# Python Cheatsheet for Data Science 
+https://elitedatascience.com/python-cheat-sheet
+https://github.com/GokuMohandas/Made-With-ML/blob/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks/03_Pandas.ipynb
+
