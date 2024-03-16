@@ -1,0 +1,6 @@
+# Automation
+
+1. Selenium is the most popular tool for web automation. It is a powerful tool for controlling web browsers
+ through programs and performing browser automation.
+2. Selenium is a free (open-source) automated testing framework used to validate web applications across 
+different browsers and platforms.

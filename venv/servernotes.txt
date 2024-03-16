@@ -1,0 +1,21 @@
+# Server 
+
+1. Setup a virtual environment using the command: python -m venv venv before starting a project. 
+2. Activate the virtual environment using the command:. venv\bin\activate
+3. For Flask, set up a flask app using the command: export FLASK_APP=server.py --> or name of the file where the app is located.
+4. Set up the environment to development mode using the command: export FLASK_ENV=development --> this will allow the server to 
+reload automatically when changes are made to the code.
+5. Run the server using the command: flask run 
+
+# Rendering templates 
+
+1. Flask has a built-in module called render_template which is used to render templates.
+2. This render_template module seeks templates in the templates folder. --> Always have a templates folder and move all your html 
+files there. 
+3. All CSS and Javascript files should be in a static folder.
+4. A favicon.ico file should be in the static folder. It's an icon that appears on the tab of the browser. To add a favicon to your 
+web app, just add this to your HTML head tag:
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+5. To ensure template, add Python expressions inside the HTML file using the {{ }} syntax. This tells Flask to render the expression
+inside the curly braces.
+
